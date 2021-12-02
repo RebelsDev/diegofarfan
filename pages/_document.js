@@ -11,12 +11,12 @@ class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
                         rel="stylesheet"
                     />
-                    <link rel="preload" href="fonts/subset-AkiraExpanded-SuperBold.woff2" as="font" type="font/woff2" crossOrigin />
-                    <link rel="preload" href="fonts/subset-BebasKai.woff2" as="font" type="font/woff2" crossOrigin />
-                    <link rel="preload" href="fonts/subset-CabifyCircular-Bold.woff2" as="font" type="font/woff2" crossOrigin />
-                    <link rel="preload" href="fonts/subset-CabifyCircular-Book.woff2" as="font" type="font/woff2" crossOrigin />
-                    <link rel="preload" href="fonts/subset-CabifyCircular-Light.woff2" as="font" type="font/woff2" crossOrigin />
-                    <link rel="preload" href="fonts/subset-Cocogoose.woff2" as="font" type="font/woff2" crossOrigin />
+                    <link rel="preload" href="/fonts/subset-AkiraExpanded-SuperBold.woff2" as="font" type="font/woff2" crossOrigin />
+                    <link rel="preload" href="/fonts/subset-BebasKai.woff2" as="font" type="font/woff2" crossOrigin />
+                    <link rel="preload" href="/fonts/subset-CabifyCircular-Bold.woff2" as="font" type="font/woff2" crossOrigin />
+                    <link rel="preload" href="/fonts/subset-CabifyCircular-Book.woff2" as="font" type="font/woff2" crossOrigin />
+                    <link rel="preload" href="/fonts/subset-CabifyCircular-Light.woff2" as="font" type="font/woff2" crossOrigin />
+                    <link rel="preload" href="/fonts/subset-Cocogoose.woff2" as="font" type="font/woff2" crossOrigin />
                 </Head>
                 <body>
                     <Main />
