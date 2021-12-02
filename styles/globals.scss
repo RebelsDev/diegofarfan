@@ -1,3 +1,5 @@
+@import "variables.module";
+
 html,
 body {
 	padding: 0;
@@ -15,13 +17,31 @@ a {
 	box-sizing: border-box;
 }
 
+h1,
+h2 {
+	font-family: "Bebas Kai";
+	margin: 0;
+}
+
+button {
+	font-family: "Akira Expanded";
+	font-size: 22px;
+	background-color: $accent-color;
+	appearance: none;
+	border: none;
+	border-radius: 25px;
+	padding: 20px 35px;
+	margin-top: 20px;
+	box-shadow: rgba(130, 143, 157, 0.082) 0px 0px 4px 0px, rgba(252, 252, 252, 0.32) 0px 0px 16px 0px;
+}
+
 @font-face {
-    font-family: 'Akira Expanded';
-    src: url('/fonts/subset-AkiraExpanded-SuperBold.woff2') format('woff2'),
-        url('/fonts/subset-AkiraExpanded-SuperBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+	font-family: "Akira Expanded";
+	src: url("/fonts/subset-AkiraExpanded-SuperBold.woff2") format("woff2"),
+		url("/fonts/subset-AkiraExpanded-SuperBold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
