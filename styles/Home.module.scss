@@ -41,14 +41,14 @@
 		max-width: 200px;
 	}
 
-	.beneficios_elements{
+	.miedos_elements{
 		display: flex;
 		flex-direction: column;
 		padding: 30px 0px;
 		gap: 20px;
 	}
 
-	.beneficios_element {
+	.miedos_element {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -57,6 +57,28 @@
 
 	img {
 		max-width: 40%;
-		box-shadow: rgba(130, 143, 157, 0.082) 0px 0px 4px 0px, rgba(252, 252, 252, 0.32) 0px 0px 16px 0px;
+  		filter: drop-shadow(0px 0px 10px rgb(114, 114, 114));
+		border-radius: 100px;
 	}
+}
+
+#beneficios{
+	background-color: $accent-color;
+	h3{
+		margin: 0;
+		text-transform: uppercase;
+	}
+	.beneficios_elements{
+		padding-top: 20px;
+	}
+
+	.beneficios_element{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	text-align: center;
+
 }
