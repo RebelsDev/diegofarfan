@@ -1,0 +1,34 @@
+@import "variables.module";
+
+.navWrapper {
+    width: 100%;
+    background-color: $accent-color;
+}
+.navbar {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0px 15px;
+
+    .logo {
+        h1{
+            font-family: "Akira Expanded";
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+    }
+
+    .contact {
+        svg {
+            width: 22px;
+            gap: 10px;
+            margin-left: 10px;
+            // margin-right: 10px;
+        }
+    }
+}
+
