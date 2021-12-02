@@ -16,18 +16,18 @@ a {
 }
 
 @font-face {
-	font-family: "Akira Expanded";
-	src: url("fonts/AkiraExpanded-SuperBold.woff2") format("woff2"),
-		url("fonts/AkiraExpanded-SuperBold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'Akira Expanded';
+    src: url('/fonts/subset-AkiraExpanded-SuperBold.woff2') format('woff2'),
+        url('/fonts/subset-AkiraExpanded-SuperBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
 	font-family: "Bebas Kai";
-	src: local("Bebas Kai"), local("BebasKai"), url("fonts/subset-BebasKai.woff2") format("woff2"),
-		url("fonts/subset-BebasKai.woff") format("woff");
+	src: local("Bebas Kai"), local("BebasKai"), url("/fonts/subset-BebasKai.woff2") format("woff2"),
+		url("/fonts/subset-BebasKai.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -36,8 +36,8 @@ a {
 @font-face {
 	font-family: "Cabify Circular";
 	src: local("Cabify Circular Bold"), local("CabifyCircular-Bold"),
-		url("fonts/subset-CabifyCircular-Bold.woff2") format("woff2"),
-		url("fonts/subset-CabifyCircular-Bold.woff") format("woff");
+		url("/fonts/subset-CabifyCircular-Bold.woff2") format("woff2"),
+		url("/fonts/subset-CabifyCircular-Bold.woff") format("woff");
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -46,8 +46,8 @@ a {
 @font-face {
 	font-family: "Cabify Circular";
 	src: local("Cabify Circular Book"), local("CabifyCircular-Book"),
-		url("fonts/subset-CabifyCircular-Book.woff2") format("woff2"),
-		url("fonts/subset-CabifyCircular-Book.woff") format("woff");
+		url("/fonts/subset-CabifyCircular-Book.woff2") format("woff2"),
+		url("/fonts/subset-CabifyCircular-Book.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -56,8 +56,8 @@ a {
 @font-face {
 	font-family: "Cabify Circular";
 	src: local("Cabify Circular Light"), local("CabifyCircular-Light"),
-		url("fonts/subset-CabifyCircular-Light.woff2") format("woff2"),
-		url("fonts/subset-CabifyCircular-Light.woff") format("woff");
+		url("/fonts/subset-CabifyCircular-Light.woff2") format("woff2"),
+		url("/fonts/subset-CabifyCircular-Light.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
@@ -65,8 +65,8 @@ a {
 
 @font-face {
 	font-family: "Cocogoose";
-	src: local("Cocogoose"), url("fonts/subset-Cocogoose.woff2") format("woff2"),
-		url("fonts/subset-Cocogoose.woff") format("woff");
+	src: local("Cocogoose"), url("/fonts/subset-Cocogoose.woff2") format("woff2"),
+		url("/fonts/subset-Cocogoose.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
