@@ -35,6 +35,11 @@ button {
 	box-shadow: rgba(130, 143, 157, 0.082) 0px 0px 4px 0px, rgba(252, 252, 252, 0.32) 0px 0px 16px 0px;
 }
 
+img {
+		width: 100%;
+		height: auto;
+}
+
 @font-face {
 	font-family: "Akira Expanded";
 	src: url("/fonts/subset-AkiraExpanded-SuperBold.woff2") format("woff2"),

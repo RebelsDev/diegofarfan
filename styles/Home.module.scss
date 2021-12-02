@@ -1,11 +1,13 @@
 @import "variables.module";
 
-.hero {
+.container {
+	padding: 30px 8vw;
+}
+
+#hero {
 	min-height: 90vh;
 	background: $tertiary-color;
-	.container {
-		padding: 30px 8vw;
-	}
+
 	#hero_text {
 		h1 {
 			font-size: 28px;
@@ -18,14 +20,43 @@
 			color: $accent-color;
 		}
 	}
-	#button{
+	#button {
 		display: flex;
 		justify-content: center;
 		width: 100%;
 	}
 
-	img{
+	img {
 		width: 100%;
-  		height: auto;
+		height: auto;
+	}
+}
+
+#miedos {
+	text-align: center;
+	color: $secondary-color;
+
+	p {
+		text-align: center;
+		max-width: 200px;
+	}
+
+	.beneficios_elements{
+		display: flex;
+		flex-direction: column;
+		padding: 30px 0px;
+		gap: 20px;
+	}
+
+	.beneficios_element {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	img {
+		max-width: 40%;
+		box-shadow: rgba(130, 143, 157, 0.082) 0px 0px 4px 0px, rgba(252, 252, 252, 0.32) 0px 0px 16px 0px;
 	}
 }
