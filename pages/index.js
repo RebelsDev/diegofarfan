@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
+import Footer from './shared/footer'
 import NavBar from './shared/navbar'
 import Icon from './titulos'
 
@@ -149,7 +150,7 @@ export default function Home() {
         </section>
       </main>
       <footer>
-
+        <Footer/>
       </footer>
     </div>
   )
