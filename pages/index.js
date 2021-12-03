@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import NavBar from './shared/navbar'
+import Icon from './titulos'
 
 export default function Home() {
   return (
@@ -55,7 +56,7 @@ export default function Home() {
               </div>
               <div className={styles.miedos_element}>
                 <img src="/img/camara.png" alt="camara logo" />
-                {/* <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 143.97 143.97"><defs><style>.cls-1{fill:none;}.cls-2{opacity:0.49;}.cls-3{fill:#ffbc00;}.cls-4{clip - path:url(#clip-path);}</style><clipPath id="clip-path" transform="translate(-157.58 -1595.63)"><rect class="cls-1" x="198.09" y="1629.03" width="64.07" height="64.07" /></clipPath></defs><circle class="cls-3" cx="71.98" cy="71.98" r="71.98" /></svg> */}
+
                 <p>
                   No empleas una estrategia clara para tu contenido.
 
@@ -64,7 +65,7 @@ export default function Home() {
               <div className={styles.miedos_element}>
                 <img src="/img/smartphone.png" alt="smartphone logo" />
 
-                {/* <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 144.71 144.71"><defs><style>.cls-1{fill:none;}.cls-2{opacity:0.49;}.cls-3{fill:#ffbc00;}.cls-4{clip - path:url(#clip-path);}</style><clipPath id="clip-path" transform="translate(-157.41 -1856.43)"><rect class="cls-1" x="194.49" y="1893.65" width="70.55" height="70.54" /></clipPath></defs><circle class="cls-3" cx="72.36" cy="72.36" r="72.36" /></svg> */}
+
                 <p>
                   Tu contenido no te da los resultados de alcance buscas.
 
@@ -117,14 +118,19 @@ export default function Home() {
                 Creo contenido de valor para marcas y personas con marcas personales para ayudarlos a conseguir posicionarse bajo un concepto único y de calidad.</p>
                 <p>
                 Trabajo en proyectos grandes y pequeños, oriento a mis clientes, les brindo estrategia, planifico su contenido, lidero equipos, manejo presupuestos y entrego resultados.</p>
+              <div className={styles.wrap}>
+
               <button>HABLEMOS</button>
+              </div>
             </div>
             <div className={styles.titulos}>
-              <h3>Director</h3>
+              <Icon/>
+
+              {/* <h3>Director</h3>
               <h3>Editor</h3>
               <h3>Fotografo</h3>
               <h3>Estratega</h3>
-              <h3>Creativo</h3>
+              <h3>Creativo</h3> */}
 
             </div>
           </div>
