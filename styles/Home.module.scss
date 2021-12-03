@@ -82,3 +82,29 @@
 	text-align: center;
 
 }
+
+#quien_soy{
+	background-color: $tertiary-color;
+	color: $primary-color;
+
+	h2{
+		font-family:'Akira Expanded', Geneva, Tahoma, sans-serif;
+	}
+	p{
+		color: $primary-color;
+	}
+	.titulos{
+		padding-top: 20px;
+		h3{
+			-webkit-text-fill-color: $tertiary-color; /* Will override color (regardless of order) */
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: $accent-color;
+
+			color: $accent-color !important;
+			line-height: 0px;
+			font-size: 30px;
+			text-align: end;
+
+		}
+	}
+}

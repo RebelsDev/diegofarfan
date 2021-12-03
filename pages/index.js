@@ -109,7 +109,25 @@ export default function Home() {
 
         </section>
         <section id={styles.quien_soy}>
+          <div className={styles.container}>
+            <div className={styles.quien_soy_text}>
+              <h2>HOLA, SOY DIEGO FARFAN</h2>
+              <p>Soy fotógrafo, creador de contenido,editor y film-maker.</p>
+              <p>
+                Creo contenido de valor para marcas y personas con marcas personales para ayudarlos a conseguir posicionarse bajo un concepto único y de calidad.</p>
+                <p>
+                Trabajo en proyectos grandes y pequeños, oriento a mis clientes, les brindo estrategia, planifico su contenido, lidero equipos, manejo presupuestos y entrego resultados.</p>
+              <button>HABLEMOS</button>
+            </div>
+            <div className={styles.titulos}>
+              <h3>Director</h3>
+              <h3>Editor</h3>
+              <h3>Fotografo</h3>
+              <h3>Estratega</h3>
+              <h3>Creativo</h3>
 
+            </div>
+          </div>
         </section>
         <section id={styles.procesos}>
 
