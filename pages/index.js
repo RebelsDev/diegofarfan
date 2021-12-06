@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Slider from "react-slick"
 import styles from '../styles/Home.module.scss'
 import FooterIcon from './hero_footer'
 import Footer from './shared/footer'
@@ -7,6 +8,45 @@ import TestIcon from './testimonios'
 import Icon from './titulos'
 
 export default function Home() {
+
+  var settings = {
+    // className: "slider variable-width",
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    // variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   return (
     <div>
       <Head>
@@ -35,6 +75,35 @@ export default function Home() {
             <div id={styles.hero_img}>
               <img src="/img/diegofarfan.png" alt="diego farfan" />
             </div>
+
+            <div className={styles.slider_wrap}>
+              <Slider {...settings}>
+                <div className={styles.slider}>
+                  <img src="/img/hero_1.png" alt="Porfolio 1" />
+                </div>
+                <div className={styles.slider}>
+                  <img src="/img/hero_2.png" alt="Porfolio 2" />
+                </div>
+                <div className={styles.slider}>
+                  <img src="/img/hero_3.png" alt="Porfolio 3" />
+                </div>
+                <div className={styles.slider}>
+                  <img src="/img/hero_4.png" alt="Porfolio 4" />
+                </div>
+                <div className={styles.slider}>
+                  <img src="/img/hero_5.png" alt="Porfolio 5" />
+                </div>
+                <div className={styles.slider}>
+                  <img src="/img/hero_6.png" alt="Porfolio 6" />
+                </div>
+                <div className={styles.slider}>
+                  <img src="/img/hero_7.png" alt="Porfolio 7" />
+                </div>
+
+              </Slider>
+
+            </div>
+
 
             <div id={styles.button}>
               <button>Hablemos</button>
@@ -252,4 +321,43 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "black",
+        background: "white",
+        borderRadius: "100px",
+
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "white",
+        // color: "white !important",
+        borderRadius: "100px",
+        // transform:"scale(0.7)"
+
+
+      }}
+      onClick={onClick}
+    />
+  );
 }
