@@ -38,7 +38,18 @@
 
 	.slider{
 		img{
+			user-select: none;
 			padding: 3px;
+			outline: none;
+			outline-style: none;
+			box-shadow: none;
+			border-color: transparent;
+		}
+		img:focus{
+			outline:none;
+			outline-style: none;
+			box-shadow: none;
+			border-color: transparent;
 		}
 	}
 }
