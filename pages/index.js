@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
+import FooterIcon from './hero_footer'
 import Footer from './shared/footer'
 import NavBar from './shared/navbar'
+import TestIcon from './testimonios'
 import Icon from './titulos'
 
 export default function Home() {
@@ -193,7 +195,7 @@ export default function Home() {
         </section>
         <section id={styles.testimonios}>
           <div className={styles.container}>
-            <img src="/img/testimonios_text.svg" alt="Lo que dicen de mi" />
+            <TestIcon />
             <div className={styles.testimonio}>
               <p>
                 Trabajar con Diego fue una experiencia increíble, cuando pensamos en como se iba a desarrollar la imagen de la primera y segunda colección de VLOOR no dudamos en recurrir a su trabajo, confiamos completamente en que el podía reflejar la esencia y el concepto de la marca a través de su arte; los resultados son la evidencia del tiempo y la pasión por su trabajo, la planeación y el moodboard que se realizó previo a la sesión de fotos nos ayudo a conectar ideas de que es lo que esperábamos, estamos muy contentos con los resultados.
@@ -220,7 +222,7 @@ export default function Home() {
         </section>
         <section id={styles.hero_footer}>
           <div className={styles.container}>
-            <img  src="/img/hero_footer_text.svg" alt="Agenda una reunion" />
+            <FooterIcon/>
 
             <div className="text">
 
@@ -231,7 +233,7 @@ export default function Home() {
               <button>Hablemos</button>
               </div>
             </div>
-            <img src="/img/hero_footer_text.svg" alt="Agenda una reunion" />
+            <FooterIcon />
 
           </div>
 
