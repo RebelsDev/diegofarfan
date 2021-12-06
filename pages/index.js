@@ -139,6 +139,7 @@ export default function Home() {
           </div>
             <img src="/img/quien_soy_bg.png" alt="camara" />
         </section>
+
         <section id={styles.propuesta}>
           <div className={styles.container}>
             <h2>UNA BUENA IMAGEN VALE MAS QUE MIL PALABRAS</h2>
@@ -147,6 +148,7 @@ export default function Home() {
             </p>
             <div className={styles.propuesta_elements}>
               <div className={styles.propuesta_element}>
+                <img src="/img/propuesta_engranaje.svg" alt="Engranaje" />
                 <div className={styles.propuesta_text}>
                   <h3>METODOLOGIA</h3>
                   <p>Te brindo planificación, estrategia dirección y ejecución. </p>
@@ -154,6 +156,7 @@ export default function Home() {
 
               </div>
               <div className={styles.propuesta_element}>
+                <img src="/img/propuesta_foco.svg" alt="foco" />
                 <div className={styles.propuesta_text}>
                   <h3>CONCEPTO</h3>
                   <p>Te oriento hacía un concepto claro y acorde con tu marca.</p>
@@ -161,6 +164,7 @@ export default function Home() {
 
               </div>
               <div className={styles.propuesta_element}>
+                <img src="/img/propuesta_paleta.svg" alt="Paleta" />
                 <div className={styles.propuesta_text}>
                   <h3>COLORES</h3>
                   <p>Creo colecciones por temporadas coherentes y armoniosos.</p>
@@ -168,6 +172,7 @@ export default function Home() {
 
               </div>
               <div className={styles.propuesta_element}>
+                <img src="/img/propuesta_dinero.svg" alt="Dinero" />
                 <div className={styles.propuesta_text}>
                   <h3>PRESUPUESTO</h3>
                   <p>Diseño un plan que garantice el mejor costo-beneficio posible.</p>
@@ -175,6 +180,7 @@ export default function Home() {
 
               </div>
               <div className={styles.propuesta_element}>
+                <img src="/img/propuesta_estrella.svg" alt="Estrella" />
                 <div className={styles.propuesta_text}>
                   <h3>ORIGINALIDAD</h3>
                   <p>Me inspiro con tu marca y te prometo  una propuesta única.</p>
@@ -182,6 +188,7 @@ export default function Home() {
 
               </div>
               <div className={styles.propuesta_element}>
+                <img src="/img/propuesta_huella.svg" alt="huella" />
                 <div className={styles.propuesta_text}>
                   <h3>estilo</h3>
                   <p>Plasmo visualmente el carácter y la filosofía de tu marca.</p>
@@ -191,7 +198,7 @@ export default function Home() {
 
             </div>
           </div>
-          <img src="/img/propuesta_bg.png" alt="Foto" />
+          <img className={styles.bg} src="/img/propuesta_bg.png" alt="Foto" />
         </section>
         <section id={styles.testimonios}>
           <div className={styles.container}>

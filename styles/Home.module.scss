@@ -150,23 +150,35 @@
 
 		text-align: center;
 	}
+	.propuesta_elements{
+		display: flex;
+		flex-direction: column;
+	}
 
 	.propuesta_element {
+		display: flex;
+		gap: 20px;
+		img{
+			width: 20%;
+			// height: 140px;
+		}
 		h3 {
 			color: white;
+			margin-bottom: 10px;
 		}
 		p {
 			color: white;
-
+			margin-top: 0%;
 			text-align: left;
 		}
 	}
-	img {
+	img.bg {
 		z-index: -1;
 		position: absolute;
 		transform: scale(1.01);
 		top: 0%;
-		left: -60%;
+		right: -300%;
+		// left: -80%;
 		// left: -100%;
 		height: 100%;
 		width: auto;
