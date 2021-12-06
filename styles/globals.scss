@@ -51,6 +51,29 @@ img {
 		height: auto;
 }
 
+.politicas{
+	.container{
+		padding: 30px 8vw;
+
+	}
+	font-family: 'Cabify Circular', Geneva, Tahoma, sans-serif !important;
+	h1{
+		color: $secondary-color;
+		font-family: 'Cabify Circular', Geneva, Tahoma, sans-serif;
+		font-size: 20px;
+	}
+	p{
+		font-family: 'Cabify Circular', Geneva, Tahoma, sans-serif;
+
+	}
+	h2{
+		color: $secondary-color;
+		font-family: 'Cabify Circular', Geneva, Tahoma, sans-serif;
+		font-size: 20px;
+
+	}
+}
+
 @font-face {
 	font-family: "Akira Expanded";
 	src: url("/fonts/subset-AkiraExpanded-SuperBold.woff2") format("woff2"),

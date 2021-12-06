@@ -1,7 +1,7 @@
 import Footer from './shared/footer';
 import NavBar from './shared/navbar';
 
-export default function Terminos() {
+export default function Politicas() {
     return (
         <>
             <NavBar />
@@ -9,7 +9,7 @@ export default function Terminos() {
             <div className='politicas'>
                 <div className='container'>
 
-                    <h1>Términos y condiciones</h1>
+                    <h1>Política de Privacidad</h1>
                     <p>La presente Política de Privacidad establece los términos en que Diego Farfan usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.</p>
                     <h2>Información que es recogida</h2>
                     <p>
