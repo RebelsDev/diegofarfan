@@ -77,10 +77,18 @@ img {
 }
 
 .slick-next:before,.slick-prev:before{
+	position:absolute;
 	opacity: 1;
 	font-size: 29px;
 	color: black;
-	margin: -5px;
+	margin: -4px;
+	top: 0;
+	// border: solid 3px black;
+	// border-radius: 100px;
+	height: 23px;
+	width: 23px;
+	// transform: translateY(10px);
+	// background-color: vb;
 	// margin-top: -5px;
 }
 
