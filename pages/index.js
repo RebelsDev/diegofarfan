@@ -47,6 +47,21 @@ export default function Home() {
       }
     ]
   };
+
+  var settings2 = {
+    // className: "slider variable-width",
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    initialSlide: 0,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+
+
+  };
   return (
     <div>
       <Head>
@@ -270,9 +285,38 @@ export default function Home() {
           <img className={styles.bg} src="/img/propuesta_bg.png" alt="Foto" />
         </section>
         <section id={styles.testimonios}>
-          <div className={styles.container}>
+          <div className={styles.container} id="testtimonio-slider">
             <TestIcon />
-            <div className={styles.testimonio}>
+            <Slider  {...settings2}>
+
+              <div className={styles.testimonio}>
+                <p>
+                  Trabajar con Diego fue una experiencia increíble, cuando pensamos en como se iba a desarrollar la imagen de la primera y segunda colección de VLOOR no dudamos en recurrir a su trabajo, confiamos completamente en que el podía reflejar la esencia y el concepto de la marca a través de su arte; los resultados son la evidencia del tiempo y la pasión por su trabajo, la planeación y el moodboard que se realizó previo a la sesión de fotos nos ayudo a conectar ideas de que es lo que esperábamos, estamos muy contentos con los resultados.
+                </p>
+                <h2>
+                  VLOOR
+                </h2>
+                <div className={styles.socials}>
+                  <img src="/img/testimonios_fb.svg" alt="facebook link" />
+                  <img src="/img/testimonios_ig.svg" alt="instagram link" />
+                </div>
+              </div>
+              <div className={styles.testimonio}>
+                <p>
+                  Trabajar con Diego fue una experiencia increíble, cuando pensamos en como se iba a desarrollar la imagen de la primera y segunda colección de VLOOR no dudamos en recurrir a su trabajo, confiamos completamente en que el podía reflejar la esencia y el concepto de la marca a través de su arte; los resultados son la evidencia del tiempo y la pasión por su trabajo, la planeación y el moodboard que se realizó previo a la sesión de fotos nos ayudo a conectar ideas de que es lo que esperábamos, estamos muy contentos con los resultados.
+                </p>
+                <h2>
+                  VANS
+                </h2>
+                <div className={styles.socials}>
+                  <img src="/img/testimonios_fb.svg" alt="facebook link" />
+                  <img src="/img/testimonios_ig.svg" alt="instagram link" />
+                </div>
+              </div>
+            </Slider>
+
+
+            {/* <div className={styles.testimonio}>
               <p>
                 Trabajar con Diego fue una experiencia increíble, cuando pensamos en como se iba a desarrollar la imagen de la primera y segunda colección de VLOOR no dudamos en recurrir a su trabajo, confiamos completamente en que el podía reflejar la esencia y el concepto de la marca a través de su arte; los resultados son la evidencia del tiempo y la pasión por su trabajo, la planeación y el moodboard que se realizó previo a la sesión de fotos nos ayudo a conectar ideas de que es lo que esperábamos, estamos muy contentos con los resultados.
               </p>
@@ -283,7 +327,7 @@ export default function Home() {
                 <img src="/img/testimonios_fb.svg" alt="facebook link" />
                 <img src="/img/testimonios_ig.svg" alt="instagram link" />
               </div>
-            </div>
+            </div>*/}
           </div>
 
         </section>

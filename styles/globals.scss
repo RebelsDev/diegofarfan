@@ -23,14 +23,13 @@ h2 {
 	margin: 0;
 }
 
-h3{
+h3 {
 	color: $tertiary-color;
-	font-family:'Akira Expanded', Geneva, Tahoma, sans-serif;
-
+	font-family: "Akira Expanded", Geneva, Tahoma, sans-serif;
 }
-p{
+p {
 	color: $secondary-color;
-	font-family: 'Cabify Circular', Geneva, Tahoma, sans-serif;;
+	font-family: "Cabify Circular", Geneva, Tahoma, sans-serif;
 	line-height: 120%;
 }
 
@@ -47,37 +46,35 @@ button {
 }
 
 img {
-		width: 100%;
-		height: auto;
+	width: 100%;
+	height: auto;
 }
 
-.politicas{
-	.container{
+.politicas {
+	.container {
 		padding: 30px 8vw;
-
 	}
-	font-family: 'Cabify Circular', Geneva, Tahoma, sans-serif !important;
-	h1{
+	font-family: "Cabify Circular", Geneva, Tahoma, sans-serif !important;
+	h1 {
 		color: $secondary-color;
-		font-family: 'Cabify Circular', Geneva, Tahoma, sans-serif;
+		font-family: "Cabify Circular", Geneva, Tahoma, sans-serif;
 		font-size: 20px;
 	}
-	p{
-		font-family: 'Cabify Circular', Geneva, Tahoma, sans-serif;
+	p {
+		font-family: "Cabify Circular", Geneva, Tahoma, sans-serif;
 		text-align: justify;
-  text-justify: inter-word;
-
+		text-justify: inter-word;
 	}
-	h2{
+	h2 {
 		color: $secondary-color;
-		font-family: 'Cabify Circular', Geneva, Tahoma, sans-serif;
+		font-family: "Cabify Circular", Geneva, Tahoma, sans-serif;
 		font-size: 20px;
-
 	}
 }
 
-.slick-next:before,.slick-prev:before{
-	position:absolute;
+.slick-next:before,
+.slick-prev:before {
+	position: absolute;
 	opacity: 1;
 	font-size: 31px;
 	color: black;
@@ -92,6 +89,19 @@ img {
 	// margin-top: -5px;
 }
 
+#testtimonio-slider {
+	overflow: hidden;
+	.slick-next:before,
+	.slick-prev:before {
+		display: none;
+	}
+	.slick-list {
+		overflow: visible;
+	}
+	.slick-arrow{
+		display: none !important;
+	}
+}
 
 @font-face {
 	font-family: "Akira Expanded";
