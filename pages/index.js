@@ -119,15 +119,15 @@ export default function Home() {
               <p>Soy fotógrafo, creador de contenido,editor y film-maker.</p>
               <p>
                 Creo contenido de valor para marcas y personas con marcas personales para ayudarlos a conseguir posicionarse bajo un concepto único y de calidad.</p>
-                <p>
+              <p>
                 Trabajo en proyectos grandes y pequeños, oriento a mis clientes, les brindo estrategia, planifico su contenido, lidero equipos, manejo presupuestos y entrego resultados.</p>
               <div className={styles.wrap}>
 
-              <button>HABLEMOS</button>
+                <button>HABLEMOS</button>
               </div>
             </div>
             <div className={styles.titulos}>
-              <Icon/>
+              <Icon />
 
               {/* <h3>Director</h3>
               <h3>Editor</h3>
@@ -137,7 +137,7 @@ export default function Home() {
 
             </div>
           </div>
-            <img src="/img/quien_soy_bg.png" alt="camara" />
+          <img src="/img/quien_soy_bg.png" alt="camara" />
         </section>
 
         <section id={styles.propuesta}>
@@ -229,7 +229,7 @@ export default function Home() {
         </section>
         <section id={styles.hero_footer}>
           <div className={styles.container}>
-            <FooterIcon/>
+            <FooterIcon />
 
             <div className="text">
 
@@ -237,18 +237,18 @@ export default function Home() {
 
               <div className={styles.btn_wrap}>
 
-              <button>Hablemos</button>
+                <button>Hablemos</button>
               </div>
             </div>
             <FooterIcon />
 
           </div>
 
-          <img className={styles.text} src="/img/hero_footer_bg.png" alt="Footer" />
+          <img className={styles.bg} src="/img/hero_footer_bg.png" alt="Footer" />
         </section>
       </main>
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </div>
   )
