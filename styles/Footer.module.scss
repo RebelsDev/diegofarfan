@@ -1,0 +1,16 @@
+.Footer{
+    display: flex;
+    background-color: black;
+}
+
+.container {
+    p{
+        color: white;
+    }
+    .copyright{
+        text-align: end;
+    }
+    display: flex;
+    justify-content: space-between;
+	padding: 10px 8vw;
+}
