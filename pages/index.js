@@ -135,18 +135,107 @@ export default function Home() {
 
             </div>
           </div>
+            <img src="/img/quien_soy_bg.png" alt="camara" />
         </section>
-        <section id={styles.procesos}>
+        <section id={styles.propuesta}>
+          <div className={styles.container}>
+            <h2>UNA BUENA IMAGEN VALE MAS QUE MIL PALABRAS</h2>
+            <p>
+              Las personas somos seres visuales, con una simple imagen podemos percibir infinitas emociones y sentimientos.
+            </p>
+            <div className={styles.propuesta_elements}>
+              <div className={styles.propuesta_element}>
+                <div className={styles.propuesta_text}>
+                  <h3>METODOLOGIA</h3>
+                  <p>Te brindo planificación, estrategia dirección y ejecución. </p>
+                </div>
 
+              </div>
+              <div className={styles.propuesta_element}>
+                <div className={styles.propuesta_text}>
+                  <h3>CONCEPTO</h3>
+                  <p>Te oriento hacía un concepto claro y acorde con tu marca.</p>
+                </div>
+
+              </div>
+              <div className={styles.propuesta_element}>
+                <div className={styles.propuesta_text}>
+                  <h3>COLORES</h3>
+                  <p>Creo colecciones por temporadas coherentes y armoniosos.</p>
+                </div>
+
+              </div>
+              <div className={styles.propuesta_element}>
+                <div className={styles.propuesta_text}>
+                  <h3>PRESUPUESTO</h3>
+                  <p>Diseño un plan que garantice el mejor costo-beneficio posible.</p>
+                </div>
+
+              </div>
+              <div className={styles.propuesta_element}>
+                <div className={styles.propuesta_text}>
+                  <h3>ORIGINALIDAD</h3>
+                  <p>Me inspiro con tu marca y te prometo  una propuesta única.</p>
+                </div>
+
+              </div>
+              <div className={styles.propuesta_element}>
+                <div className={styles.propuesta_text}>
+                  <h3>estilo</h3>
+                  <p>Plasmo visualmente el carácter y la filosofía de tu marca.</p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <img src="/img/propuesta_bg.png" alt="Foto" />
         </section>
         <section id={styles.testimonios}>
+          <div className={styles.container}>
+            <img src="/img/testimonios_text.svg" alt="Lo que dicen de mi" />
+            <div className={styles.testimonio}>
+              <p>
+                Trabajar con Diego fue una experiencia increíble, cuando pensamos en como se iba a desarrollar la imagen de la primera y segunda colección de VLOOR no dudamos en recurrir a su trabajo, confiamos completamente en que el podía reflejar la esencia y el concepto de la marca a través de su arte; los resultados son la evidencia del tiempo y la pasión por su trabajo, la planeación y el moodboard que se realizó previo a la sesión de fotos nos ayudo a conectar ideas de que es lo que esperábamos, estamos muy contentos con los resultados.
+              </p>
+              <h2>
+                VLOOR
+              </h2>
+              <div className={styles.socials}>
+                <img src="/img/testimonios_fb.svg" alt="facebook link" />
+                <img src="/img/testimonios_ig.svg" alt="instagram link" />
+              </div>
+            </div>
+          </div>
 
         </section>
         <section id={styles.lead_magnet}>
+          <div className={styles.container}>
+            <h1>10 tendencias de contenido para marcas de moda</h1>
 
+            <button>
+              Descargar
+            </button>
+          </div>
         </section>
         <section id={styles.hero_footer}>
+          <div className={styles.container}>
+            <img  src="/img/hero_footer_text.svg" alt="Agenda una reunion" />
 
+            <div className="text">
+
+              <h1>SI ESTAS PENSANDO EN LLEVAR TU MARCA AL SIGUIENTE NIVEL</h1>
+
+              <div className={styles.btn_wrap}>
+
+              <button>Hablemos</button>
+              </div>
+            </div>
+            <img src="/img/hero_footer_text.svg" alt="Agenda una reunion" />
+
+          </div>
+
+          <img className={styles.text} src="/img/hero_footer_bg.png" alt="Footer" />
         </section>
       </main>
       <footer>

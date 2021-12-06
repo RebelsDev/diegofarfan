@@ -41,7 +41,7 @@
 		max-width: 200px;
 	}
 
-	.miedos_elements{
+	.miedos_elements {
 		display: flex;
 		flex-direction: column;
 		padding: 30px 0px;
@@ -57,22 +57,22 @@
 
 	img {
 		max-width: 40%;
-  		filter: drop-shadow(0px 0px 10px rgb(114, 114, 114));
+		filter: drop-shadow(0px 0px 10px rgb(114, 114, 114));
 		border-radius: 100px;
 	}
 }
 
-#beneficios{
+#beneficios {
 	background-color: $accent-color;
-	h3{
+	h3 {
 		margin: 0;
 		text-transform: uppercase;
 	}
-	.beneficios_elements{
+	.beneficios_elements {
 		padding-top: 20px;
 	}
 
-	.beneficios_element{
+	.beneficios_element {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -80,31 +80,35 @@
 	}
 
 	text-align: center;
-
 }
 
-#quien_soy{
-	background-color: $tertiary-color;
+#quien_soy {
+	// background-color: $tertiary-color;
 	color: $primary-color;
-		justify-content: center;
-
+	justify-content: center;
+	position: relative;
 
 	display: flex;
 
-	.wrap{
+	overflow: hidden;
+	.container {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.wrap {
 		display: flex;
 		justify-content: center;
 	}
 
-	h2{
-		font-family:'Akira Expanded', Geneva, Tahoma, sans-serif;
+	h2 {
+		font-family: "Akira Expanded", Geneva, Tahoma, sans-serif;
 	}
-	p{
+	p {
 		color: $primary-color;
 	}
-	.titulos{
+	.titulos {
 		padding-top: 20px;
-		h3{
+		h3 {
 			-webkit-text-fill-color: $tertiary-color; /* Will override color (regardless of order) */
 			-webkit-text-stroke-width: 1px;
 			-webkit-text-stroke-color: $accent-color;
@@ -113,7 +117,137 @@
 			line-height: 0px;
 			font-size: 30px;
 			text-align: end;
-
 		}
+	}
+
+	img {
+		z-index: -1;
+		position: absolute;
+		top: 0%;
+		right: -60%;
+		// left: -100%;
+		height: 100%;
+		width: auto;
+	}
+}
+
+#propuesta {
+	position: relative;
+	overflow: hidden;
+
+	.container {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	h2 {
+		font-family: "Akira Expanded", Geneva, Tahoma, sans-serif;
+		// font-size: 50px;
+		color: $accent-color;
+		text-align: center;
+	}
+	p {
+		color: white;
+
+		text-align: center;
+	}
+
+	.propuesta_element {
+		h3 {
+			color: white;
+		}
+		p {
+			color: white;
+
+			text-align: left;
+		}
+	}
+	img {
+		z-index: -1;
+		position: absolute;
+		transform: scale(1.01);
+		top: 0%;
+		left: -60%;
+		// left: -100%;
+		height: 100%;
+		width: auto;
+	}
+}
+
+#testimonios {
+	.testimonio {
+		margin-top: 20px;
+		background-color: $accent-color;
+		padding: 30px;
+		border-radius: 30px;
+		box-shadow: rgba(232, 213, 139, 0.728) 0px 0px 4px 10px, rgba(252, 252, 252, 0.32) 0px 0px 16px 0px;
+
+		p {
+			color: white;
+			margin-top: 0%;
+			text-align: center;
+		}
+		h2 {
+			font-size: 40px;
+			text-align: center;
+			padding-bottom: 10px;
+		}
+
+		.socials {
+			margin: auto;
+			text-align: center;
+			height: 40px;
+			width: 40px;
+			display: flex;
+			gap: 10px;
+			justify-content: center;
+			// align-items: center;
+		}
+	}
+}
+
+#lead_magnet {
+	background-color: $accent-color;
+	h1 {
+		font-family: "Akira Expanded", Geneva, Tahoma, sans-serif;
+	}
+	button {
+		background-color: white;
+		box-shadow: rgba(100, 100, 111, 0.8) 0px 0px 29px 0px;
+	}
+}
+
+#hero_footer {
+	position: relative;
+	min-height: 95vh;
+	overflow: hidden;
+
+	.container{
+			min-height: 95vh;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		// align-items:stretch;
+	}
+	h1{
+		font-family: "Akira Expanded", Geneva, Tahoma, sans-serif;
+		text-align: center;
+		color: white;
+		font-size: 17px;
+	}
+	.btn_wrap{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		// text-align: center;
+	}
+	img.text {
+		position: absolute;
+		top: 0%;
+		right: -80%;
+		transform: scale(1.5);
+		z-index: -1;
+		height: 100%;
+		width: auto;
 	}
 }
