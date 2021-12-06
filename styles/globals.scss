@@ -102,6 +102,19 @@ img {
 		display: none !important;
 	}
 }
+#main_slider {
+	overflow: hidden;
+	.slick-next:before,
+	.slick-prev:before {
+		display: none;
+	}
+	.slick-list {
+		overflow: visible;
+	}
+	.slick-arrow{
+		display: none !important;
+	}
+}
 
 @font-face {
 	font-family: "Akira Expanded";
