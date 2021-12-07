@@ -120,28 +120,28 @@ export default function Home() {
                     initialSlide={0}
                   >
                     <div className={styles.slider}>
-                      <img src="/img/diegofarfan.png" alt="diego farfan" />
+                      <img src="/img/webp/diegofarfan.webp" alt="diego farfan" />
                     </div>
                     <div className={styles.slider}>
-                      <img src="/img/hero_1.png" alt="Porfolio 1" />
+                      <img src="/img/webp/hero_1.webp" alt="Porfolio 1" />
                     </div>
                     <div className={styles.slider}>
-                      <img src="/img/hero_2.png" alt="Porfolio 2" />
+                      <img src="/img/webp/hero_2.webp" alt="Porfolio 2" />
                     </div>
                     <div className={styles.slider}>
-                      <img src="/img/hero_3.png" alt="Porfolio 3" />
+                      <img src="/img/webp/hero_3.webp" alt="Porfolio 3" />
                     </div>
                     <div className={styles.slider}>
-                      <img src="/img/hero_4.png" alt="Porfolio 4" />
+                      <img src="/img/webp/hero_4.webp" alt="Porfolio 4" />
                     </div>
                     <div className={styles.slider}>
-                      <img src="/img/hero_5.png" alt="Porfolio 5" />
+                      <img src="/img/webp/hero_5.webp" alt="Porfolio 5" />
                     </div>
                     <div className={styles.slider}>
-                      <img src="/img/hero_6.png" alt="Porfolio 6" />
+                      <img src="/img/webp/hero_6.webp" alt="Porfolio 6" />
                     </div>
                     <div className={styles.slider}>
-                      <img src="/img/hero_7.png" alt="Porfolio 7" />
+                      <img src="/img/webp/hero_7.webp" alt="Porfolio 7" />
                     </div>
 
 
@@ -155,28 +155,28 @@ export default function Home() {
                   swipeToSlide={true}
                   focusOnSelect={true}>
                   <div className={styles.slider}>
-                    <img src="/img/diegofarfan.png" alt="diego farfan" />
+                    <img src="/img/webp/diegofarfan.webp" alt="diego farfan" />
                   </div>
                   <div className={styles.slider}>
-                    <img src="/img/hero_1.png" alt="Porfolio 1" />
+                    <img src="/img/webp/hero_1.webp" alt="Porfolio 1" />
                   </div>
                   <div className={styles.slider}>
-                    <img src="/img/hero_2.png" alt="Porfolio 2" />
+                    <img src="/img/webp/hero_2.webp" alt="Porfolio 2" />
                   </div>
                   <div className={styles.slider}>
-                    <img src="/img/hero_3.png" alt="Porfolio 3" />
+                    <img src="/img/webp/hero_3.webp" alt="Porfolio 3" />
                   </div>
                   <div className={styles.slider}>
-                    <img src="/img/hero_4.png" alt="Porfolio 4" />
+                    <img src="/img/webp/hero_4.webp" alt="Porfolio 4" />
                   </div>
                   <div className={styles.slider}>
-                    <img src="/img/hero_5.png" alt="Porfolio 5" />
+                    <img src="/img/webp/hero_5.webp" alt="Porfolio 5" />
                   </div>
                   <div className={styles.slider}>
-                    <img src="/img/hero_6.png" alt="Porfolio 6" />
+                    <img src="/img/webp/hero_6.webp" alt="Porfolio 6" />
                   </div>
                   <div className={styles.slider}>
-                    <img src="/img/hero_7.png" alt="Porfolio 7" />
+                    <img src="/img/webp/hero_7.webp" alt="Porfolio 7" />
                   </div>
 
                 </Slider>
@@ -198,21 +198,21 @@ export default function Home() {
             </h2>
             <div className={styles.miedos_elements}>
               <div className={styles.miedos_element}>
-                <img src="/img/contenido.png" alt="contenido logo" />
+                <img src="/img/webp/contenido.webp" alt="contenido logo" />
 
                 <p>
                   No planificas el contenido que publicas
                 </p>
               </div>
               <div className={styles.miedos_element}>
-                <img src="/img/camara.png" alt="camara logo" />
+                <img src="/img/webp/camara.webp" alt="camara logo" />
 
                 <p>
                   No empleas una estrategia clara para tu contenido.
                 </p>
               </div>
               <div className={styles.miedos_element}>
-                <img src="/img/smartphone.png" alt="smartphone logo" />
+                <img src="/img/webp/smartphone.webp" alt="smartphone logo" />
                 <p>
                   Tu contenido no te da los resultados de alcance buscas.
                 </p>
@@ -230,7 +230,7 @@ export default function Home() {
             </h2>
             <div className={styles.beneficios_elements}>
               <div className={styles.beneficios_element}>
-                <img src="/img/hero_5.png" alt="Beneficio 1" />
+                <img src="/img/webp/hero_5.webp" alt="Beneficio 1" />
                 <h3 id='large'>Calidad</h3>
                 <p>Crear contenido valioso
                   empleando herramientas
@@ -238,7 +238,7 @@ export default function Home() {
               </div>
 
               <div className={styles.beneficios_element}>
-                <img src="/img/hero_6.png" alt="Beneficio 1" />
+                <img src="/img/webp/hero_6.webp" alt="Beneficio 1" />
                 <h3 id='large'>Originalidad</h3>
                 <p>Una estrategia capaz
                   de brindarte contenido
@@ -246,7 +246,7 @@ export default function Home() {
               </div>
 
               <div className={styles.beneficios_element}>
-                <img src="/img/hero_7.png" alt="Beneficio 1" />
+                <img src="/img/webp/hero_7.webp" alt="Beneficio 1" />
                 <h3 id='large'>Mensaje</h3>
                 <p>Compartir contenido
                   capaz de transmitir
@@ -283,7 +283,7 @@ export default function Home() {
 
             </div>
           </div>
-          <img src="/img/quien_soy_bg.png" alt="camara" />
+          <img src="/img/webp/quien_soy_bg.webp" alt="camara" />
         </section>
 
         <section id={styles.propuesta}>
@@ -350,7 +350,7 @@ export default function Home() {
 
             </div>
           </div>
-          <img className={styles.bg} src="/img/propuesta_bg.png" alt="Foto" />
+          <img className={styles.bg} src="/img/webp/propuesta_bg.webp" alt="Foto" />
         </section>
         <section id={styles.testimonios}>
           <div className={styles.container} id="testtimonio-slider">
@@ -447,7 +447,7 @@ export default function Home() {
             </div>
           </div>
 
-          <img className={styles.bg} src="/img/hero_footer_bg.png" alt="Footer" />
+          <img className={styles.bg} src="/img/webp/hero_footer_bg.webp" alt="Footer" />
         </section>
       </main>
       <footer>
