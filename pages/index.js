@@ -230,6 +230,7 @@ export default function Home() {
             </h2>
             <div className={styles.beneficios_elements}>
               <div className={styles.beneficios_element}>
+                <img src="/img/hero_5.png" alt="Beneficio 1" />
                 <h3 id='large'>Calidad</h3>
                 <p>Crear contenido valioso
                   empleando herramientas
@@ -237,6 +238,7 @@ export default function Home() {
               </div>
 
               <div className={styles.beneficios_element}>
+                <img src="/img/hero_6.png" alt="Beneficio 1" />
                 <h3 id='large'>Originalidad</h3>
                 <p>Una estrategia capaz
                   de brindarte contenido
@@ -244,6 +246,7 @@ export default function Home() {
               </div>
 
               <div className={styles.beneficios_element}>
+                <img src="/img/hero_7.png" alt="Beneficio 1" />
                 <h3 id='large'>Mensaje</h3>
                 <p>Compartir contenido
                   capaz de transmitir
