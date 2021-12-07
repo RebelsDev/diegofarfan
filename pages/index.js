@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import React, { useState } from 'react'
 import Slider from "react-slick"
 import styles from '../styles/Home.module.scss'
 import FooterIcon from './hero_footer'
@@ -6,7 +7,6 @@ import Footer from './shared/footer'
 import NavBar from './shared/navbar'
 import TestIcon from './testimonios'
 import Icon from './titulos'
-import React, { useState, useEffect } from 'react';
 
 export default function Home() {
   const [nav1, setNav1] = useState(null);
@@ -81,101 +81,106 @@ export default function Home() {
       </nav>
 
       <main>
+
+
+
         <section id={styles.hero}>
 
-          <div className={styles.container}>
-            <div id={styles.hero_text}>
-              <header>
-                <h1>
-                  Posiciono a marcas mediante la creación de contenido audiovisual
-                </h1>
-                <h2>
-                  FOTOGRAFÍA · EDICIÓN · VIDEO
-                </h2>
-              </header>
-            </div>
+          <header>
+            <div className={styles.container}>
 
-            {/* <div id={styles.hero_img}>
+              <div id={styles.hero_text}>
+                <header>
+                  <h1>
+                    Posiciono a marcas mediante la creación de contenido audiovisual
+                  </h1>
+                  <h2>
+                    FOTOGRAFÍA · EDICIÓN · VIDEO
+                  </h2>
+                </header>
+              </div>
+
+              {/* <div id={styles.hero_img}>
               <img src="/img/diegofarfan.png" alt="diego farfan" />
             </div> */}
-            <div id="main_slider">
+              <div id="main_slider">
 
-              <Slider
-                asNavFor={nav2}
-                ref={slider => (setNav1(slider))}
-                fade={true}
-                initialSlide={0}
-              >
-                <div className={styles.slider}>
-                  <img src="/img/diegofarfan.png" alt="diego farfan" />
-                </div>
-                <div className={styles.slider}>
-                  <img src="/img/hero_1.png" alt="Porfolio 1" />
-                </div>
-                <div className={styles.slider}>
-                  <img src="/img/hero_2.png" alt="Porfolio 2" />
-                </div>
-                <div className={styles.slider}>
-                  <img src="/img/hero_3.png" alt="Porfolio 3" />
-                </div>
-                <div className={styles.slider}>
-                  <img src="/img/hero_4.png" alt="Porfolio 4" />
-                </div>
-                <div className={styles.slider}>
-                  <img src="/img/hero_5.png" alt="Porfolio 5" />
-                </div>
-                <div className={styles.slider}>
-                  <img src="/img/hero_6.png" alt="Porfolio 6" />
-                </div>
-                <div className={styles.slider}>
-                  <img src="/img/hero_7.png" alt="Porfolio 7" />
-                </div>
+                <Slider
+                  asNavFor={nav2}
+                  ref={slider => (setNav1(slider))}
+                  fade={true}
+                  initialSlide={0}
+                >
+                  <div className={styles.slider}>
+                    <img src="/img/diegofarfan.png" alt="diego farfan" />
+                  </div>
+                  <div className={styles.slider}>
+                    <img src="/img/hero_1.png" alt="Porfolio 1" />
+                  </div>
+                  <div className={styles.slider}>
+                    <img src="/img/hero_2.png" alt="Porfolio 2" />
+                  </div>
+                  <div className={styles.slider}>
+                    <img src="/img/hero_3.png" alt="Porfolio 3" />
+                  </div>
+                  <div className={styles.slider}>
+                    <img src="/img/hero_4.png" alt="Porfolio 4" />
+                  </div>
+                  <div className={styles.slider}>
+                    <img src="/img/hero_5.png" alt="Porfolio 5" />
+                  </div>
+                  <div className={styles.slider}>
+                    <img src="/img/hero_6.png" alt="Porfolio 6" />
+                  </div>
+                  <div className={styles.slider}>
+                    <img src="/img/hero_7.png" alt="Porfolio 7" />
+                  </div>
 
 
-              </Slider>
+                </Slider>
+              </div>
+
+              <div className={styles.slider_wrap}>
+                <Slider {...settings} asNavFor={nav1}
+                  ref={slider => (setNav2(slider))}
+                  swipeToSlide={true}
+                  focusOnSelect={true}>
+                  <div className={styles.slider}>
+                    <img src="/img/diegofarfan.png" alt="diego farfan" />
+                  </div>
+                  <div className={styles.slider}>
+                    <img src="/img/hero_1.png" alt="Porfolio 1" />
+                  </div>
+                  <div className={styles.slider}>
+                    <img src="/img/hero_2.png" alt="Porfolio 2" />
+                  </div>
+                  <div className={styles.slider}>
+                    <img src="/img/hero_3.png" alt="Porfolio 3" />
+                  </div>
+                  <div className={styles.slider}>
+                    <img src="/img/hero_4.png" alt="Porfolio 4" />
+                  </div>
+                  <div className={styles.slider}>
+                    <img src="/img/hero_5.png" alt="Porfolio 5" />
+                  </div>
+                  <div className={styles.slider}>
+                    <img src="/img/hero_6.png" alt="Porfolio 6" />
+                  </div>
+                  <div className={styles.slider}>
+                    <img src="/img/hero_7.png" alt="Porfolio 7" />
+                  </div>
+
+                </Slider>
+
+              </div>
+
+
+              <div id={styles.button}>
+                <button>Hablemos</button>
+              </div>
             </div>
 
-            <div className={styles.slider_wrap}>
-              <Slider {...settings} asNavFor={nav1}
-                ref={slider => (setNav2(slider))}
-                swipeToSlide={true}
-                focusOnSelect={true}>
-                <div className={styles.slider}>
-                  <img src="/img/diegofarfan.png" alt="diego farfan" />
-                </div>
-                <div className={styles.slider}>
-                  <img src="/img/hero_1.png" alt="Porfolio 1" />
-                </div>
-                <div className={styles.slider}>
-                  <img src="/img/hero_2.png" alt="Porfolio 2" />
-                </div>
-                <div className={styles.slider}>
-                  <img src="/img/hero_3.png" alt="Porfolio 3" />
-                </div>
-                <div className={styles.slider}>
-                  <img src="/img/hero_4.png" alt="Porfolio 4" />
-                </div>
-                <div className={styles.slider}>
-                  <img src="/img/hero_5.png" alt="Porfolio 5" />
-                </div>
-                <div className={styles.slider}>
-                  <img src="/img/hero_6.png" alt="Porfolio 6" />
-                </div>
-                <div className={styles.slider}>
-                  <img src="/img/hero_7.png" alt="Porfolio 7" />
-                </div>
-
-              </Slider>
-
-            </div>
-
-
-            <div id={styles.button}>
-              <button>Hablemos</button>
-            </div>
-          </div>
-
-
+          </header>
         </section>
         <section id={styles.miedos}>
           <div className={styles.container}>
