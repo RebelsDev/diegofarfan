@@ -39,6 +39,7 @@ p {
 }
 
 button {
+	color: black;
 	font-family: "Akira Expanded";
 	font-size: clamp(1.375rem, 1.2083rem + 0.6667vw, 2rem);
 	background-color: $accent-color;
