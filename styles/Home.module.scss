@@ -68,6 +68,9 @@
 		text-align: center;
 		max-width: 200px;
 	}
+	h2{
+		font-size: clamp(1.5rem, 1.3rem + 0.8vw, 2.25rem);
+	}
 
 	.miedos_elements {
 		display: flex;
@@ -93,11 +96,17 @@
 #beneficios {
 	background-color: $accent-color;
 	h3 {
+
 		margin: 0;
 		text-transform: uppercase;
 	}
 	.beneficios_elements {
 		padding-top: 20px;
+	}
+
+	h2{
+		font-size: clamp(1.5rem, 1.3rem + 0.8vw, 2.25rem);
+		transform: translateX(8%);
 	}
 
 	.beneficios_element {
@@ -378,6 +387,17 @@
 			// margin: auto;
 			justify-content: center;
 		}
+		h2{
+			margin: auto;
+			max-width: 40%;
+			padding-top: 30px;
+			padding-bottom: 40px;
+		}
+		img {
+		max-width: 60%;
+		filter: drop-shadow(0px 0px 10px rgb(114, 114, 114));
+		border-radius: 100px;
+	}
 	}
 
 	#beneficios {
@@ -386,6 +406,12 @@
 			flex-direction: row;
 			// justify-content: flex-start
 			align-items: flex-start;
+		}
+		h2{
+			margin: auto;
+			max-width: 40%;
+			padding-top: 30px;
+			padding-bottom: 40px;
 		}
 	}
 
