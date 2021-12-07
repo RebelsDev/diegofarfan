@@ -31,11 +31,17 @@ p {
 	color: $secondary-color;
 	font-family: "Cabify Circular", Geneva, Tahoma, sans-serif;
 	line-height: 120%;
+	font-size: clamp(1rem, 0.9167rem + 0.3333vw, 1.3125rem);
+
+}
+
+#large{
+	font-size: clamp(1.25rem, 1.0833rem + 0.6667vw, 1.875rem) !important;
 }
 
 button {
 	font-family: "Akira Expanded";
-	font-size: 22px;
+	font-size: clamp(1.375rem, 1.2083rem + 0.6667vw, 2rem);
 	background-color: $accent-color;
 	appearance: none;
 	border: none;

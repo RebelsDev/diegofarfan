@@ -228,21 +228,21 @@ export default function Home() {
             </h2>
             <div className={styles.beneficios_elements}>
               <div className={styles.benedificios_element}>
-                <h3>Calidad</h3>
+                <h3 id='large'>Calidad</h3>
                 <p>Crear contenido valioso
                   empleando herramientas
                   y programas de calidad.</p>
               </div>
 
               <div className={styles.beneficios_element}>
-                <h3>Originalidad</h3>
+                <h3 id='large'>Originalidad</h3>
                 <p>Una estrategia capaz
                   de brindarte contenido
                   creativo y único.</p>
               </div>
 
               <div className={styles.beneficios_element}>
-                <h3>Mensaje</h3>
+                <h3 id='large'>Mensaje</h3>
                 <p>Compartir contenido
                   capaz de transmitir
                   un mensaje poderoso.</p>
@@ -283,7 +283,7 @@ export default function Home() {
 
         <section id={styles.propuesta}>
           <div className={styles.container}>
-            <h2>UNA BUENA IMAGEN VALE MAS QUE MIL PALABRAS</h2>
+            <h2 id='large'>UNA BUENA IMAGEN VALE MAS QUE MIL PALABRAS</h2>
             <p>
               Las personas somos seres visuales, con una simple imagen podemos percibir infinitas emociones y sentimientos.
             </p>
@@ -404,20 +404,35 @@ export default function Home() {
           </div>
         </section>
         <section id={styles.hero_footer}>
+          <div className={styles.footer_svg} id={styles.top}>
+            <div id={styles.top}>
+              <FooterIcon />
+            </div>
+          </div>
           <div className={styles.container}>
-            <FooterIcon />
+            <div className={styles.footer_svg} >
+              <FooterIcon />
+            </div>
 
-            <div className="text">
+            <div className={styles.text}>
 
-              <h1>SI ESTAS PENSANDO EN LLEVAR TU MARCA AL SIGUIENTE NIVEL</h1>
+              <h1 id='large'>SI ESTAS PENSANDO EN LLEVAR TU MARCA AL SIGUIENTE NIVEL</h1>
 
               <div className={styles.btn_wrap}>
 
                 <button>Hablemos</button>
               </div>
             </div>
-            <FooterIcon />
+            <div className={styles.footer_svg}>
+              <FooterIcon />
+            </div>
 
+          </div>
+
+          <div className={styles.footer_svg} id={styles.bottom}>
+            <div id={styles.bottom}>
+              <FooterIcon />
+            </div>
           </div>
 
           <img className={styles.bg} src="/img/hero_footer_bg.png" alt="Footer" />
