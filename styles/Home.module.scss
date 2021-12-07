@@ -429,6 +429,13 @@
 	#quien_soy {
 		min-height: 80vh;
 		position: relative;
+
+		h2{
+			width: 60%;
+		}
+		p{
+			width: 70%;
+		}
 		.container {
 			display: flex;
 			position: relative;
@@ -504,6 +511,7 @@
 		margin: auto;
 		width: 70%;
 		.testimonio{
+			padding: 10% 10% 6% 10%;
 			p{
 
 				color:#494949 ;

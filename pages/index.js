@@ -6,6 +6,8 @@ import FooterIcon from './hero_footer'
 import Footer from './shared/footer'
 import NavBar from './shared/navbar'
 import TestIcon from './testimonios'
+import DesIcon from './testimonios_desktop'
+import SvgComponent from './testimonios_desktop'
 import Icon from './titulos'
 
 export default function Home() {
@@ -349,7 +351,14 @@ export default function Home() {
         </section>
         <section id={styles.testimonios}>
           <div className={styles.container} id="testtimonio-slider">
+            <div id="desktop">
+
+            <DesIcon/>
+            </div>
+            <div id="mobile">
             <TestIcon />
+
+            </div>
             <Slider  {...settings2}>
 
               <div className={styles.testimonio}>
