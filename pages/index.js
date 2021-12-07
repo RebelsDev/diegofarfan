@@ -227,7 +227,7 @@ export default function Home() {
               SIN EMBARGO, TE GUSTARÍA...
             </h2>
             <div className={styles.beneficios_elements}>
-              <div className={styles.benedificios_element}>
+              <div className={styles.beneficios_element}>
                 <h3 id='large'>Calidad</h3>
                 <p>Crear contenido valioso
                   empleando herramientas
@@ -284,7 +284,7 @@ export default function Home() {
         <section id={styles.propuesta}>
           <div className={styles.container}>
             <h2 id='large'>UNA BUENA IMAGEN VALE MAS QUE MIL PALABRAS</h2>
-            <p>
+            <p id={styles.pad}>
               Las personas somos seres visuales, con una simple imagen podemos percibir infinitas emociones y sentimientos.
             </p>
             <div className={styles.propuesta_elements}>
