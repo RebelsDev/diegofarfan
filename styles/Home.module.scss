@@ -8,6 +8,12 @@
 	min-height: 90vh;
 	background: $tertiary-color;
 
+	.main_info{
+		.button{
+			display: none;
+		}
+	}
+
 	#hero_text {
 		h1 {
 			font-size: 28px;
@@ -20,7 +26,7 @@
 			color: $accent-color;
 		}
 	}
-	#button {
+	.button {
 		display: flex;
 		justify-content: center;
 		width: 100%;
@@ -209,7 +215,18 @@
 }
 
 #testimonios {
+	.container{
+		max-width: 800px;
+		margin: auto;
+
+
+		// display: flex;
+		// justify-content: center;
+		// width: 100%;
+	}
 	.testimonio {
+		margin: auto;
+		// max-width: 700px;
 		margin-top: 20px;
 		background-color: $accent-color;
 		padding: 30px;
@@ -303,6 +320,101 @@
 }
 
 
-@media (min-width: 961px) {
-	
+@media (min-width: 768px) {
+	#hero{
+		.main_info{
+			display: flex;
+			flex-direction: row-reverse;
+			gap: 5%;
+			#hero_text{
+				width: 50%
+
+			}
+			.main_slider{
+				width: 50%;
+			}
+
+			.button{
+				display: inline-block;
+				// justify-content: flex-start !important;
+			}
+		}
+		#mobile{
+			display: none;
+		}
+		#hero_text{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
+	#miedos {
+		.miedos_elements{
+			flex-direction: row;
+		}
+	}
+
+	#beneficios{
+		.beneficios_elements{
+			display: flex;
+			flex-direction: row;
+			// justify-content: flex-start
+			align-items: flex-start;
+
+		}
+	}
+
+	#quien_soy{
+		position: relative;
+		.container{
+
+			display: flex;
+			position: relative;
+			gap: 20%;
+			.quien_soy_text{
+				width: 40%;
+			}
+
+			.titulos{
+				width: 30%;
+			}
+		}
+		.titulos{
+			// width: 30%;
+			position: absolute;
+			right: 3%;
+			bottom: 3%;
+		}
+		img{
+			right: 0;
+			width: 100%;
+			height: 100%;
+			object-fit:cover;
+			transform: scale(1.01);
+		}
+		.wrap{
+			justify-content: flex-start;
+		}
+	}
+	#propuesta{
+		.propuesta_elements{
+			flex-direction: row;
+			img{
+				max-height: 70px;
+			}
+			.propuesta_element{
+				// justify-content: center;
+				align-items: center;
+			}
+		}
+		img.bg{
+			left: auto;
+			right: auto;
+			width: 100%;
+			height: 100%;
+			object-fit:cover;
+			transform: scale(1.01);
+		}
+	}
 }

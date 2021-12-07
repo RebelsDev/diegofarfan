@@ -21,7 +21,7 @@ export default function Home() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 7,
     slidesToScroll: 1,
     initialSlide: 0,
     nextArrow: <SampleNextArrow />,
@@ -31,16 +31,16 @@ export default function Home() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 4,
+          slidesToShow: 7,
+          slidesToScroll: 1,
           infinite: true,
           dots: false
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 767,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 5,
           slidesToScroll: 1,
           initialSlide: 2
         }
@@ -89,55 +89,62 @@ export default function Home() {
           <header>
             <div className={styles.container}>
 
-              <div id={styles.hero_text}>
-                <header>
+              <div className={styles.main_info}>
+
+                <div id={styles.hero_text}>
+
+
                   <h1>
                     Posiciono a marcas mediante la creación de contenido audiovisual
                   </h1>
                   <h2>
                     FOTOGRAFÍA · EDICIÓN · VIDEO
                   </h2>
-                </header>
-              </div>
-
-              {/* <div id={styles.hero_img}>
-              <img src="/img/diegofarfan.png" alt="diego farfan" />
-            </div> */}
-              <div id="main_slider">
-
-                <Slider
-                  asNavFor={nav2}
-                  ref={slider => (setNav1(slider))}
-                  fade={true}
-                  initialSlide={0}
-                >
-                  <div className={styles.slider}>
-                    <img src="/img/diegofarfan.png" alt="diego farfan" />
+                  <div className={styles.button}>
+                    <button>Hablemos</button>
                   </div>
-                  <div className={styles.slider}>
-                    <img src="/img/hero_1.png" alt="Porfolio 1" />
-                  </div>
-                  <div className={styles.slider}>
-                    <img src="/img/hero_2.png" alt="Porfolio 2" />
-                  </div>
-                  <div className={styles.slider}>
-                    <img src="/img/hero_3.png" alt="Porfolio 3" />
-                  </div>
-                  <div className={styles.slider}>
-                    <img src="/img/hero_4.png" alt="Porfolio 4" />
-                  </div>
-                  <div className={styles.slider}>
-                    <img src="/img/hero_5.png" alt="Porfolio 5" />
-                  </div>
-                  <div className={styles.slider}>
-                    <img src="/img/hero_6.png" alt="Porfolio 6" />
-                  </div>
-                  <div className={styles.slider}>
-                    <img src="/img/hero_7.png" alt="Porfolio 7" />
-                  </div>
+                </div>
 
 
-                </Slider>
+                {/* <div id={styles.hero_img}>
+                <img src="/img/diegofarfan.png" alt="diego farfan" />
+              </div> */}
+                <div id="main_slider" className={styles.main_slider}>
+
+                  <Slider
+                    asNavFor={nav2}
+                    ref={slider => (setNav1(slider))}
+                    fade={true}
+                    initialSlide={0}
+                  >
+                    <div className={styles.slider}>
+                      <img src="/img/diegofarfan.png" alt="diego farfan" />
+                    </div>
+                    <div className={styles.slider}>
+                      <img src="/img/hero_1.png" alt="Porfolio 1" />
+                    </div>
+                    <div className={styles.slider}>
+                      <img src="/img/hero_2.png" alt="Porfolio 2" />
+                    </div>
+                    <div className={styles.slider}>
+                      <img src="/img/hero_3.png" alt="Porfolio 3" />
+                    </div>
+                    <div className={styles.slider}>
+                      <img src="/img/hero_4.png" alt="Porfolio 4" />
+                    </div>
+                    <div className={styles.slider}>
+                      <img src="/img/hero_5.png" alt="Porfolio 5" />
+                    </div>
+                    <div className={styles.slider}>
+                      <img src="/img/hero_6.png" alt="Porfolio 6" />
+                    </div>
+                    <div className={styles.slider}>
+                      <img src="/img/hero_7.png" alt="Porfolio 7" />
+                    </div>
+
+
+                  </Slider>
+                </div>
               </div>
 
               <div className={styles.slider_wrap}>
@@ -175,7 +182,7 @@ export default function Home() {
               </div>
 
 
-              <div id={styles.button}>
+              <div id={styles.mobile} className={styles.button}>
                 <button>Hablemos</button>
               </div>
             </div>
@@ -193,7 +200,6 @@ export default function Home() {
 
                 <p>
                   No planificas el contenido que publicas
-
                 </p>
               </div>
               <div className={styles.miedos_element}>
@@ -201,16 +207,12 @@ export default function Home() {
 
                 <p>
                   No empleas una estrategia clara para tu contenido.
-
                 </p>
               </div>
               <div className={styles.miedos_element}>
                 <img src="/img/smartphone.png" alt="smartphone logo" />
-
-
                 <p>
                   Tu contenido no te da los resultados de alcance buscas.
-
                 </p>
               </div>
 
@@ -286,51 +288,57 @@ export default function Home() {
               Las personas somos seres visuales, con una simple imagen podemos percibir infinitas emociones y sentimientos.
             </p>
             <div className={styles.propuesta_elements}>
-              <div className={styles.propuesta_element}>
-                <img src="/img/propuesta_engranaje.svg" alt="Engranaje" />
-                <div className={styles.propuesta_text}>
-                  <h3>METODOLOGIA</h3>
-                  <p>Te brindo planificación, estrategia dirección y ejecución. </p>
+              <div className={styles.row1}>
+                <div className={styles.propuesta_element}>
+                  <img src="/img/propuesta_engranaje.svg" alt="Engranaje" />
+                  <div className={styles.propuesta_text}>
+                    <h3>METODOLOGIA</h3>
+                    <p>Te brindo planificación, estrategia dirección y ejecución. </p>
+                  </div>
+
+                </div>
+                <div className={styles.propuesta_element}>
+                  <img src="/img/propuesta_foco.svg" alt="foco" />
+                  <div className={styles.propuesta_text}>
+                    <h3>CONCEPTO</h3>
+                    <p>Te oriento hacía un concepto claro y acorde con tu marca.</p>
+                  </div>
+
+                </div>
+                <div className={styles.propuesta_element}>
+                  <img src="/img/propuesta_paleta.svg" alt="Paleta" />
+                  <div className={styles.propuesta_text}>
+                    <h3>COLORES</h3>
+                    <p>Creo colecciones por temporadas coherentes y armoniosos.</p>
+                  </div>
+
                 </div>
 
               </div>
-              <div className={styles.propuesta_element}>
-                <img src="/img/propuesta_foco.svg" alt="foco" />
-                <div className={styles.propuesta_text}>
-                  <h3>CONCEPTO</h3>
-                  <p>Te oriento hacía un concepto claro y acorde con tu marca.</p>
-                </div>
+              <div className={styles.row2}>
+                <div className={styles.propuesta_element}>
+                  <img src="/img/propuesta_dinero.svg" alt="Dinero" />
+                  <div className={styles.propuesta_text}>
+                    <h3>PRESUPUESTO</h3>
+                    <p>Diseño un plan que garantice el mejor costo-beneficio posible.</p>
+                  </div>
 
-              </div>
-              <div className={styles.propuesta_element}>
-                <img src="/img/propuesta_paleta.svg" alt="Paleta" />
-                <div className={styles.propuesta_text}>
-                  <h3>COLORES</h3>
-                  <p>Creo colecciones por temporadas coherentes y armoniosos.</p>
                 </div>
+                <div className={styles.propuesta_element}>
+                  <img src="/img/propuesta_estrella.svg" alt="Estrella" />
+                  <div className={styles.propuesta_text}>
+                    <h3>ORIGINALIDAD</h3>
+                    <p>Me inspiro con tu marca y te prometo  una propuesta única.</p>
+                  </div>
 
-              </div>
-              <div className={styles.propuesta_element}>
-                <img src="/img/propuesta_dinero.svg" alt="Dinero" />
-                <div className={styles.propuesta_text}>
-                  <h3>PRESUPUESTO</h3>
-                  <p>Diseño un plan que garantice el mejor costo-beneficio posible.</p>
                 </div>
+                <div className={styles.propuesta_element}>
+                  <img src="/img/propuesta_huella.svg" alt="huella" />
+                  <div className={styles.propuesta_text}>
+                    <h3>estilo</h3>
+                    <p>Plasmo visualmente el carácter y la filosofía de tu marca.</p>
+                  </div>
 
-              </div>
-              <div className={styles.propuesta_element}>
-                <img src="/img/propuesta_estrella.svg" alt="Estrella" />
-                <div className={styles.propuesta_text}>
-                  <h3>ORIGINALIDAD</h3>
-                  <p>Me inspiro con tu marca y te prometo  una propuesta única.</p>
-                </div>
-
-              </div>
-              <div className={styles.propuesta_element}>
-                <img src="/img/propuesta_huella.svg" alt="huella" />
-                <div className={styles.propuesta_text}>
-                  <h3>estilo</h3>
-                  <p>Plasmo visualmente el carácter y la filosofía de tu marca.</p>
                 </div>
 
               </div>
