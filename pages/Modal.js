@@ -6,11 +6,11 @@ import { useForm } from 'react-hook-form'
 const Modal = (props) => {
     const router = useRouter()
     const { register, handleSubmit } = useForm()
-    const formId = '3'
+    const formId = '1'
 
     const onSubmit = async (data) => {
-        handleActiveCampaignSubmit(data, 'dermosamm', formId)
-        router.push("/reserva-tu-cita")
+        handleActiveCampaignSubmit(data, 'diegofarfan', formId)
+        router.push("/reserva-una-cita")
     }
 
     if (!props.show) {

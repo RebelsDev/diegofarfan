@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import React, { useState } from 'react'
 import Slider from "react-slick"
 import styles from '../styles/Home.module.scss'
 import FooterIcon from './hero_footer'
+import Modal from './Modal'
 import Footer from './shared/footer'
 import NavBar from './shared/navbar'
 import TestIcon from './testimonios'
@@ -11,6 +13,8 @@ import SvgComponent from './testimonios_desktop'
 import Icon from './titulos'
 
 export default function Home() {
+  const [showModal, setShowModal] = useState(false)
+  const [showTips, setShowModalTips] = useState(false)
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
 
@@ -20,6 +24,7 @@ export default function Home() {
 
   var settings = {
     // className: "slider variable-width",
+
     dots: false,
     infinite: true,
     speed: 500,
@@ -81,6 +86,19 @@ export default function Home() {
       <nav>
         <NavBar />
       </nav>
+      <Modal
+        onClose={() => setShowModal(false)}
+        show={showModal}
+        title={"Ingresa tu correo electrónico para que puedas agendar una cita con nosotros"}
+        actionName={"Agendar Cita"}
+      />
+
+      <Modal
+        onClose={() => setShowModalTips(false)}
+        show={showTips}
+        title={"Ingresa tu correo electrónico para descargar nuestros tips"}
+        actionName={"Descargar Tips"}
+      />
 
       <main>
 
@@ -103,7 +121,7 @@ export default function Home() {
                     FOTOGRAFÍA · EDICIÓN · VIDEO
                   </h2>
                   <div className={styles.button}>
-                    <button>Hablemos</button>
+                    <button onClick={()=> setShowModal(true)}>Hablemos</button>
                   </div>
                 </div>
 
@@ -185,7 +203,7 @@ export default function Home() {
 
 
               <div id={styles.mobile} className={styles.button}>
-                <button>Hablemos</button>
+                <button onClick={() => setShowModal(true)}>Hablemos</button>
               </div>
             </div>
 
@@ -269,7 +287,7 @@ export default function Home() {
                 Trabajo en proyectos grandes y pequeños, oriento a mis clientes, les brindo estrategia, planifico su contenido, lidero equipos, manejo presupuestos y entrego resultados.</p>
               <div className={styles.wrap}>
 
-                <button>HABLEMOS</button>
+                <button onClick={() => setShowModal(true)}>HABLEMOS</button>
               </div>
             </div>
             <div className={styles.titulos}>
@@ -410,7 +428,7 @@ export default function Home() {
           <div className={styles.container}>
             <h1>10 tendencias de contenido para marcas de moda</h1>
 
-            <button>
+            <button onClick={() => setShowModalTips(true)}>
               Descargar
             </button>
           </div>
@@ -432,7 +450,7 @@ export default function Home() {
 
               <div className={styles.btn_wrap}>
 
-                <button>Hablemos</button>
+                <button onClick={() => setShowModal(true)}>Hablemos</button>
               </div>
             </div>
             <div className={styles.footer_svg}>
