@@ -10,7 +10,7 @@ export default function Calendly() {
                 <h1 style={{ textAlign: "center", color: "#000000" }}>Reserva tu cita</h1>
                 <p style={{ textAlign: "center", color: "#000000" }}>Elige la fecha que más se acomode a tu horario</p>
 
-                <InlineWidget url="https://calendly.com/diegofarfan/reserva-una-cita" pageSettings={{
+                <InlineWidget id="calendly" url="https://calendly.com/diegofarfan/reserva-una-cita" pageSettings={{
                     // backgroundColor: 'F8D2E1',
                     hideEventTypeDetails: false,
                     hideLandingPageDetails: false,
@@ -20,7 +20,11 @@ export default function Calendly() {
 
             </div>
 
-            <Footer />
+            <div id="footer_calendly">
+                <Footer />
+
+            </div>
+
         </div>
     )
 }

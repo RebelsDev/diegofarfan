@@ -10,6 +10,7 @@ const Modal = (props) => {
 
     const onSubmit = async (data) => {
         handleActiveCampaignSubmit(data, 'diegofarfan', formId)
+        console.log(data);
         router.push("/reserva-una-cita")
     }
 
