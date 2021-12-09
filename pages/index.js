@@ -11,6 +11,7 @@ import TestIcon from './testimonios'
 import DesIcon from './testimonios_desktop'
 import SvgComponent from './testimonios_desktop'
 import Icon from './titulos'
+import Link from 'next/dist/client/link'
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false)
@@ -390,7 +391,10 @@ export default function Home() {
                   VLOOR
                 </h2>
                 <div className={styles.socials}>
-                  <img src="/img/testimonios_fb.svg" alt="facebook link" />
+
+                  <a href="https://www.facebook.com/vloor.st" rel='noreel'>
+                    <img src="/img/testimonios_fb.svg" alt="facebook link" />
+                  </a>
                   <img src="/img/testimonios_ig.svg" alt="instagram link" />
                 </div>
               </div>
