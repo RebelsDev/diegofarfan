@@ -3,8 +3,10 @@ import Document, { Head, Html, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
     render() {
         return (
-            <Html>
+            <Html lang='es'>
                 <Head>
+                    <meta name="author" content="Agencia Rebels 247" />
+
                     <meta name="description" content="Posiciono a marcas mediante la creación de contenido audiovisual. FOTOGRAFÍA · EDICIÓN · VIDEO" />
                     <link rel="icon" href="/favicon.ico" />
                     <link
@@ -17,7 +19,7 @@ class MyDocument extends Document {
                     <link rel="preload" href="/fonts/subset-CabifyCircular-Book.woff2" as="font" type="font/woff2" crossOrigin="" />
                     <link rel="preload" href="/fonts/subset-CabifyCircular-Light.woff2" as="font" type="font/woff2" crossOrigin="" />
                     <link rel="preload" href="/fonts/subset-Cocogoose.woff2" as="font" type="font/woff2" crossOrigin="" />
-                    
+
                 </Head>
                 <body>
                     <Main />
