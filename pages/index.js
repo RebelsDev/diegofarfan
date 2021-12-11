@@ -12,6 +12,8 @@ import DesIcon from './testimonios_desktop'
 import SvgComponent from './testimonios_desktop'
 import Icon from './titulos'
 import Link from 'next/dist/client/link'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false)

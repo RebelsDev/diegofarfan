@@ -94,9 +94,9 @@ img {
 .slick-next:before,
 .slick-prev:before {
 	position: absolute;
-	opacity: 1;
-	font-size: 31px;
-	color: black;
+	opacity: 1 !important;
+	font-size: 31px !important;
+	color: black !important;
 	margin: -3px;
 	top: 0;
 	// border: solid 3px black;
