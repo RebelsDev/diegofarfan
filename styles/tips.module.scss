@@ -2,14 +2,13 @@
 .container {
     padding: 40px 8vw;
     h1 {
-        font-family: 'Akira Expanded',sans-serif;
+        font-family: "Akira Expanded", sans-serif;
         font-weight: 600;
         font-size: 24px;
         text-align: center;
         // font-family: "Poppins";
         // color: $bg-alternative-color;
         padding-bottom: 10px;
-
     }
     h2 {
         padding-top: 0;
@@ -18,9 +17,8 @@
         // font-family: "Poppins";
         // color: $bg-alternative-color;
         padding-bottom: 10px;
-
     }
-    img{
+    img {
         width: 100%;
     }
 }
@@ -55,8 +53,19 @@
         margin-bottom: 10px;
         font-family: Poppins, sans-serif;
     }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
     button {
-        font-family: 'Akira Expanded';
+        font-family: "Akira Expanded";
         font-size: 20px;
         padding: 10px 20px;
         border-radius: 20px;
@@ -80,7 +89,7 @@
             text-align: center;
             // font-family: "Poppins";
         }
-        h2{
+        h2 {
             font-size: 22px;
             padding-top: 10px;
             padding-bottom: 10px;
