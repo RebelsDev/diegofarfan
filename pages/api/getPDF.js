@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+import fs from 'fs'
+import path from 'path'
 
 const filePath = path.resolve('.', 'public/dummy.pdf')
 const imageBuffer = fs.readFileSync(filePath)
