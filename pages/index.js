@@ -1,7 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/dist/client/link'
 import Head from 'next/head'
 import React, { useState } from 'react'
 import Slider from "react-slick"
+import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick.css"
 import styles from '../styles/Home.module.scss'
 import FooterIcon from './hero_footer'
 import Modal from './Modal'
@@ -9,11 +12,7 @@ import Footer from './shared/footer'
 import NavBar from './shared/navbar'
 import TestIcon from './testimonios'
 import DesIcon from './testimonios_desktop'
-import SvgComponent from './testimonios_desktop'
 import Icon from './titulos'
-import Link from 'next/dist/client/link'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false)
@@ -124,7 +123,7 @@ export default function Home() {
                     FOTOGRAFÍA · EDICIÓN · VIDEO
                   </h2>
                   <div className={styles.button}>
-                    <button onClick={()=> setShowModal(true)}>Hablemos</button>
+                    <button onClick={() => setShowModal(true)}>Hablemos</button>
                   </div>
                 </div>
 
@@ -377,10 +376,10 @@ export default function Home() {
           <div className={styles.container} id="testtimonio-slider">
             <div id="desktop">
 
-            <DesIcon/>
+              <DesIcon />
             </div>
             <div id="mobile">
-            <TestIcon />
+              <TestIcon />
 
             </div>
             <Slider  {...settings2}>
@@ -434,9 +433,15 @@ export default function Home() {
           <div className={styles.container}>
             <h1>10 tendencias de contenido para marcas de moda</h1>
 
-            <button onClick={() => setShowModalTips(true)}>
-              Descargar
-            </button>
+            <Link href={'/mejores-tips'}>
+              <a>
+                <button>
+                  Descargar
+                </button>
+
+              </a>
+
+            </Link>
           </div>
         </section>
         <section id={styles.hero_footer}>

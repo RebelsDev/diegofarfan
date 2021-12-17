@@ -18,3 +18,11 @@
     justify-content: space-between;
 	padding: 10px 8vw;
 }
+
+@media (min-height: 1200px) {
+    .Footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}

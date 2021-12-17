@@ -1,0 +1,130 @@
+@import "variables.module";
+.container {
+    padding: 40px 8vw;
+    h1 {
+        font-family: 'Akira Expanded',sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+        // font-family: "Poppins";
+        // color: $bg-alternative-color;
+        padding-bottom: 10px;
+
+    }
+    h2 {
+        padding-top: 0;
+        font-size: 20px;
+        text-align: center;
+        // font-family: "Poppins";
+        // color: $bg-alternative-color;
+        padding-bottom: 10px;
+
+    }
+    img{
+        width: 100%;
+    }
+}
+.lead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+        padding-bottom: 30px;
+    }
+}
+.form {
+    // margin-top: 30px;
+    border-radius: 30px;
+    padding: 15px 15px;
+    label {
+        font-size: 20px;
+        color: white;
+        font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+    background-color: $accent-color;
+    display: flex;
+    flex-direction: column;
+    input {
+        width: 100%;
+        appearance: none;
+        border: none;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-family: Poppins, sans-serif;
+    }
+    button {
+        font-family: 'Akira Expanded';
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin-top: 10px;
+        float: right !important;
+        // margin: auto;
+        align-self: flex-end;
+        background-color: white;
+        color: black;
+        box-shadow: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 40px 8vw;
+        width: 80%;
+        margin: auto;
+        h1 {
+            font-size: 27px;
+            text-align: center;
+            // font-family: "Poppins";
+        }
+        h2{
+            font-size: 22px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    .lead {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px 8vw;
+        gap: 5%;
+        .leadimg {
+            width: 50%;
+        }
+        .leadform {
+            width: 45%;
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            font-family: "Akira Expanded";
+        }
+        img {
+            padding-bottom: 0px;
+        }
+    }
+
+    .form {
+        label {
+            font-size: 20px;
+            color: white;
+            font-family: "Cabify Circular", Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            padding-bottom: 1.2vh;
+        }
+        input {
+            font-size: 16px;
+            width: 100%;
+            appearance: none;
+            border: none;
+            padding: 10px;
+            margin-bottom: 1.5vh;
+            font-family: "Cabify Circular", sans-serif;
+        }
+    }
+}
