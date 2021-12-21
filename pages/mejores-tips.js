@@ -35,7 +35,7 @@ export default function Tips(props) {
             <NavBar />
             <div className={styles.container}>
                 {/* <a href="/api/getPDF">aa</a> */}
-                <h1>10 tendencias de contenido para marcas de moda</h1>
+                <h1>Razones por las que tu marca necesita fotografia publicitaria</h1>
                 {/* <h2>Completa el formulario y obten la guía al instante</h2> */}
                 <div className={styles.lead}>
                     <div className={styles.leadimg}>
