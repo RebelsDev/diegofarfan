@@ -26,7 +26,7 @@ export default function Tips(props) {
         console.log(data);
 
         handleActiveCampaignSubmit(data, 'diegofarfan', formId)
-        router.push('api/getPDF')
+        // router.push('api/getPDF')
 
 
     }
