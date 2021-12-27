@@ -39,7 +39,7 @@ export default function Tips(props) {
                 {/* <h2>Completa el formulario y obten la guía al instante</h2> */}
                 <div className={styles.lead}>
                     <div className={styles.leadimg}>
-                        <img src="/img/magnet_reference.jpg" alt="Lead Magnet Zotian" />
+                        <img src="/img/magnet_reference.png" alt="Lead Magnet Zotian" />
 
                     </div>
                     <div className={styles.leadform}>
