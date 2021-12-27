@@ -399,7 +399,7 @@ export default function Home() {
                   <img src="/img/testimonios_ig.svg" alt="instagram link" />
                 </div>
               </div>
-              <div className={styles.testimonio}>
+              {/* <div className={styles.testimonio}>
                 <p>
                   Trabajar con Diego fue una experiencia increíble, cuando pensamos en como se iba a desarrollar la imagen de la primera y segunda colección de VLOOR no dudamos en recurrir a su trabajo, confiamos completamente en que el podía reflejar la esencia y el concepto de la marca a través de su arte; los resultados son la evidencia del tiempo y la pasión por su trabajo, la planeación y el moodboard que se realizó previo a la sesión de fotos nos ayudo a conectar ideas de que es lo que esperábamos, estamos muy contentos con los resultados.
                 </p>
@@ -410,7 +410,7 @@ export default function Home() {
                   <img src="/img/testimonios_fb.svg" alt="facebook link" />
                   <img src="/img/testimonios_ig.svg" alt="instagram link" />
                 </div>
-              </div>
+              </div> */}
             </Slider>
 
 
@@ -431,7 +431,7 @@ export default function Home() {
         </section>
         <section id={styles.lead_magnet}>
           <div className={styles.container}>
-            <h1>10 tendencias de contenido para marcas de moda</h1>
+            <h1>Razones por las que tu marca necesita fotografia publicitaria</h1>
 
             <Link href={'/mejores-tips'}>
               <a>
