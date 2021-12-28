@@ -82,7 +82,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>DIEGO FARFÁN -  FOTOGRAFÍA · EDICIÓN · VIDEO</title>
+        <title>Diego Farfán -  FOTOGRAFÍA · EDICIÓN · VIDEO</title>
       </Head>
 
       <nav>
